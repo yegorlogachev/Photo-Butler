@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Photo Butler</string>
+    <string name="admin_description">Kiosk mode</string>
+</resources>

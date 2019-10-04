@@ -1,4 +1,4 @@
-package com.railsreactor.photobutler
+package com.railsreactor.photobutler.utils
 
 import android.app.admin.DeviceAdminReceiver
 import android.content.ComponentName
@@ -11,3 +11,4 @@ class UserDeviceAdminReceiver : DeviceAdminReceiver() {
         }
     }
 }
+

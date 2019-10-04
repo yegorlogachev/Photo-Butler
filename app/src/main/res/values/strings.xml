@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">Photo Butler</string>
+    <string name="app_name">Photo Kiosk</string>
     <string name="admin_description">Kiosk mode</string>
+
+    <!--startActivity-->
+    <string name="start_dialog_title">init</string>
+    <string name="start_dialog_descr">%1$s\n %2$s</string>
+    <string name="start_dialog_btn_yes">submit</string>
+
 </resources>

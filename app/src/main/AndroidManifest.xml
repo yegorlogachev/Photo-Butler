@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.railsreactor.photobutler">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -7,7 +8,8 @@
 
     <application
         android:testOnly="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <receiver
             android:name=".UserDeviceAdminReceiver"
             android:description="@string/admin_description"
@@ -17,10 +19,12 @@
                 android:name="android.app.device_admin"
                 android:resource="@xml/device_admin_receiver" />
             <intent-filter>
-                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
